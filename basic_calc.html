@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function add(){
+                var n1=document.getElementById("n1");
+                var n2=document.getElementById("n2");
+                var result=Number(n1.value)+Number(n2.value);
+                document.getElementById("r1").innerHTML="<p style=color:blue;><b>Addition of two numbers:</b></p> "+result;
+            }
+            function sub(){
+                var n1=document.getElementById("n1");
+                var n2=document.getElementById("n2");
+                var result=Number(n1.value)-Number(n2.value);
+                document.getElementById("r1").innerHTML="<p style=color:blue;><b>Subraction of 2 numbers:</b></p> "+result;
+            }
+            function mul(){
+                var n1=document.getElementById("n1");
+                var n2=document.getElementById("n2");
+                var result=Number(n1.value)*Number(n2.value);
+                document.getElementById("r1").innerHTML="<p style=color:blue;><b>Multiplication of 2 numbers:</b></p> "+result;
+            }
+            function divi(){
+                var n1=document.getElementById("n1");
+                var n2=document.getElementById("n2");
+                var result=Number(n1.value)/Number(n2.value);
+                document.getElementById("r1").innerHTML="<p style=color:blue;><b>Division of 2 numbers: </b></p>"+result;
+            }
+            function Mod(){
+                var n1=document.getElementById("n1");
+                var n2=document.getElementById("n2");
+                var result=Number(n1.value)%Number(n2.value);
+                document.getElementById("r1").innerHTML="<p style=color:blue;><b>Modulus of 2 numbers:</b></p> "+result;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <b><label for="First num">Enter the First Number</label></b><br><br>
+            <input type="text" id="n1"><br><br>
+            <b><label for="First num">Enter the Second Number</label></b><br><br>
+            <input type="text" id="n2"><br><br>
+            <input type="button"  value="add" onclick="add()"/>
+            
+            <input type="button"  value="sub" onclick="sub()"/>
+            
+            <input type="button"  value="mul" onclick="mul()"/>
+            
+            <input type="button"  value="div" onclick="divi()"/>
+            
+            <input type="button"  value="mod" onclick="Mod()"/><br><br>
+            
+            <!-- <b><label for="First num">Result: </label></b>
+            <input type="text" id="r1" ><br><br> -->
+            <p id="r1"></p>
+            <input type="reset" id="clr" value="clear"/>
+        </form>
+    </body>
+</html>
