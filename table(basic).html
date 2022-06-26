@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo on Tables</title>
+    </head>
+    <body>
+        <h1>Creating Simple Tables</h1>
+        <table>
+            <tr>
+                <th>P</th>
+                <th>~P</th>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+        </table>
+        <h1>Creating Simple Tables with Border</h1>
+        <table border="5" bordercolor="blue" bgcolor="pink" cellspacing="4" cellpadding="4" width="100" height="50">
+            <tr>
+                <th>P</th>
+                <th>~P</th>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+        </table>
+        <h1>Creating Simple Tables using row attributes</h1>
+        <table border="3" width="100" height="100" align="center">
+            <tr bgcolor="pink"  valign="top">
+                <th>P</th>
+                <th>~P</th>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+        </table>
+        <h1>Creating Simple Tables using data attributes</h1>
+        <table border="3" width="100" height="100">
+            <caption>Table</caption>
+            <tr >
+                <th>P</th>
+                <th>~P</th>
+            </tr>
+            <tr>
+                <td align="right" bgcolor="pink" valign="bottom">T</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>T</td>
+            </tr>
+        </table>
+    </table>
+    <h1>Creating Simple Tables using data attributes</h1>
+    <table border="3" width="100" height="100">
+            <tr >
+            <th >P</th>
+            <th colspan="2">~P</th>
+        </tr>
+        <tr>
+            <td>Hi</td>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </table>
+    <table border="3" width="100" height="100">
+        <tr >
+            <th rowspan="2" >P</th>
+            <th colspan="2" >~P</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </table>
+    </body>
+</html>
