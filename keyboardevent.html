@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard Events</title>
+
+    </head>
+    <body>
+        <h2>Enter the text in the input box to see the keyboard events</h2>
+        
+        <input type="text" id="input" onkeyup="keypress()" onkeydown="keyrelease()">
+        <script>
+            function keypress(){
+                 var ele=document.getElementById("input");
+                 ele.style.backgroundColor="skyblue";
+            }
+            function keyrelease(){
+                var ele1=document.getElementById("input");
+                ele1.style.backgroundColor="deeppink";
+            }
+        </script>
+    </body>
+</html>
